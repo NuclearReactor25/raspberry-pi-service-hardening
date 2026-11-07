@@ -1,0 +1,5 @@
+.env
+*.pem
+*.ppk
+id_ed25519*
+authorized_keys
