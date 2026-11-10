@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Tue Nov 10 18:37:09 2026 as: nmap -sS -sV -sC -p- -vvv -oA evidence/08-final-nmap 192.0.2.10
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.0.2.10 ()	Status: Up
+Host: 192.0.2.10 ()	Ports: 22/open/tcp//ssh//OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)/	Ignored State: filtered (65534)
+# Nmap done at Tue Nov 10 18:39:00 2026 -- 1 IP address (1 host up) scanned in 111.60 seconds

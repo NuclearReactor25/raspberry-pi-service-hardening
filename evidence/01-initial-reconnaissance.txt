@@ -1,0 +1,21 @@
+INITIAL RECONNAISSANCE
+Date: 7 November 2026
+Source: Transcribed from original terminal output
+Target: 192.0.2.10 (redacted placeholder)
+
+Command:
+sudo nmap -sS -sV -sC -p- <PI_IP>
+
+Original findings:
+
+Not shown: 65534 closed tcp ports (reset)
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)
+
+Interpretation:
+SSH was the only open TCP port identified.
+The remaining scanned TCP ports were reported closed.
+
+Note:
+This is a transcription of the original results, not a raw Nmap output file.

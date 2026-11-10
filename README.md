@@ -178,10 +178,15 @@ PORT   STATE SERVICE REASON         VERSION
 ```
 
 The final scan found SSH as the only open TCP port. The other scanned TCP ports were reported as filtered (no response). This is consistent with the default-deny inbound firewall policy. Nmap's `filtered` state does not, by itself, prove which firewall or network device performed the filtering; the result was interpreted together with the UFW policy and the controlled port-8080 test.
-
+> **Evidence redaction:** The original private lab IP address has been
+> replaced with `192.0.2.10` in the saved Nmap files for publication.
+> This is a documentation placeholder, not the actual scan target.
+> The files are sanitised copies of the original scan output.
 ### 6.3 Final local socket review
 
 After the service changes, the Pi's `ss -tulnp` output showed SSH listening on IPv4 and IPv6 port 22. No other listening sockets appeared in that captured output.
+
+Juice Shop had been used earlier in the lab with its container port bound to the Pi's loopback address (`127.0.0.1:3000`). Laptop access was provided through an SSH local-forwarding tunnel rather than direct access through the hotspot interface. No Juice Shop listening socket appeared in the final captured output. This is a time-specific snapshot and does not contradict its earlier use in the lab.
 
 ## 7. Findings and security impact
 
